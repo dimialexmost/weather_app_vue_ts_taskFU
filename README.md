@@ -20,7 +20,7 @@ The information contained in the wireframe must also be contained in the finishe
      Weather icon is a graphic icon, see api (data source) under step 4 (further down) for example.
      The temperature must be stated in Celsius.
 
-# weather1
+# weather_app
 
 This template should help get you started developing with Vue 3 in Vite.
 
