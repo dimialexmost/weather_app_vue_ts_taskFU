@@ -28,7 +28,7 @@
 
     </div>
 
-    <h2>Hourly Forecast</h2>
+    <h2>Three-hourly Forecasts</h2>
     <div class="hourly-forecast">
       <div v-for="forecast in hourlyForecast" :key="forecast.time" class="forecast-item">
         <div class="forecast-icon">
@@ -97,7 +97,7 @@ export default defineComponent({
     },
     extractHourlyForecast(forecastData: any[]): any[] {
       return forecastData
-          .filter((forecast, index) => index % 5 === 0)
+          .filter((forecast, index) => index % 1 === 0) // Three-hourly Forecasts
           .map(forecast => ({
             time: forecast.dt_txt,
             temperature: forecast.main.temp,
